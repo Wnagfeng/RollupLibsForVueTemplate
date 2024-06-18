@@ -1,0 +1,44 @@
+{
+  "name": "RollupLibsForVue",
+  "version": "1.0.0",
+  "description": "datav components library",
+  "main": "./dist/screendataves.js",
+  "scripts": {
+    "dev": "rollup -wc rollup.config.dev.js",
+    "build": "rollup -c rollup.config.dev.js",
+    "build:prod": "rollup -c rollup.config.prod.js"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "echarts-datav"
+  ],
+  "author": "Joon",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/node": "^7.23.9",
+    "@babel/plugin-transform-runtime": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/pluginutils": "^5.1.0",
+    "rollup": "^4.9.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.70.0",
+    "sass-loader": "^10.5.2",
+    "scss": "^0.2.4",
+    "vue": "3.2.13"
+  },
+  "dependencies": {
+    "loadsh": "^0.0.4",
+    "uuid": "^9.0.1",
+    "vue-seamless-scroll": "^1.1.23"
+  }
+}

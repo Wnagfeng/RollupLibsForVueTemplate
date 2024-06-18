@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.3.11/dist/vue.global.js"></script>
+    <script src="../dist/screendatav.js"></script>
+    <style>
+        
+    </style>
+    <!--  -->
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+        <test-component></test-component>
+    </div>
+    <script>
+        Vue.createApp({
+            setup() {
+                var message = "wanfeng"
+                return {
+                    message
+                }
+            }
+        }).use(screenDatav).mount("#app")
+    </script>
+
+</body>
+
+</html>
