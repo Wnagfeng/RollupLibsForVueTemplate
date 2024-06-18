@@ -3,7 +3,7 @@
 <div  class="box"  style="    display: flex;    justify-content: center;    align-items: center;    flex-direction: column; ">  <h1 align="center">Welcome to VuecomponentLibs 👋</h1> 
      <h2 align="center"> 一款开箱即用的Rollup搭建的vue组件库  😀</h2> 
      <h2 align="center"> CoderJoon  🐂</h2> 
-    <img    src="./imgs/Logo.png"  style="width: 160px; height: 160px; margin-left: 150px"    /></div>
+
 
 # 该组件库内置6款适用于可视化大屏的常见组件
 
