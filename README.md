@@ -53,7 +53,65 @@ tips：本人前端功力尚浅，如有Bug轻点喷！
 
 <img    src="./imgs/Loading.gif"    style="width: 900; height: 460px;"/>
 
-## 
+## VueEcharts组件
+
+测试结果：好使😀
+
+需要使用 可视化您直接传入配置项 还能实时更新哦是不是非常的银性哈哈哈 ！
+
+```vue
+<template>
+  <div class="testWrapper">
+    <button @click="handleChangeName">changename</button>
+    <h1>测试可视化</h1>
+    <div class="test">
+      <VueEcharts :options="options" />
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { reactive } from "vue";
+const options = reactive({
+  xAxis: {
+    type: "category",
+    data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+  },
+  yAxis: {
+    type: "value",
+  },
+  series: [
+    {
+      data: [150, 230, 224, 218, 135, 147, 260],
+      type: "line",
+    },
+  ],
+});
+
+const handleChangeName = () => {
+  setTimeout(() => {
+    options.series[0].data.push(100);
+    options.xAxis.data.push("Sun");
+    options.series[0].data.push(100);
+    options.xAxis.data.push("Sun");
+  }, 1000);
+};
+</script>
+
+<style scoped lang="less">
+.test {
+  width: 500px;
+  height: 500px;
+}
+</style>
+
+```
+
+
+
+
+
+
 
 
 
