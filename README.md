@@ -1,6 +1,6 @@
 
 
-<div  class="box"  style="    display: flex;    justify-content: center;    align-items: center;    flex-direction: column; ">  <h1 align="center">Welcome to VuecomponentLibs 👋</h1> 
+<div  class="box"  style="    display: flex;    justify-content: center;    align-items: center;    flex-direction: column; ">  <h1 align="center">Welcome to RollupLibsForVueTemplate 👋</h1> 
      <h2 align="center"> 一款开箱即用的Rollup搭建的vue组件库  😀</h2> 
      <h2 align="center"> CoderJoon  🐂</h2> 
 
