@@ -77,16 +77,17 @@ PS C:\Users\Joon\Desktop\datavEchartsScreenLibs-main> npm run build:prod
 PS C:\Users\Joon\Desktop\datavEchartsScreenLibs-main> cd .\dist\
 ```
 
-第六步在dist目录下执行 (或者npm link  xxxx都行看你自己想法)
+第六步在dist目录下执行 
+注意这里的link xxx 指的是 你package.json中的 name的名称 如果你不做修改的话就是 RollupLibsForVue
 
 ```shell
-PS C:\Users\Joon\Desktop\datavEchartsScreenLibs-main\dist> npm link echarts-screen-libs
+PS C:\Users\Joon\Desktop\datavEchartsScreenLibs-main\dist> npm link RollupLibsForVue
 ```
 
 第七步在你创建的vue项目下面执行
 
 ```shell
-PS C:\Users\Joon\Desktop\my-vue-app> npm link echarts-screen-libs
+PS C:\Users\Joon\Desktop\my-vue-app> npm link RollupLibsForVue
 ```
 
 这是本地关联教程 你如果发布到npm仓库了你就直接npm i xxx就行
